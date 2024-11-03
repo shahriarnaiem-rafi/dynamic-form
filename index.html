@@ -43,7 +43,7 @@
                 </div>
             
 
-            <input onclick="my()" id type="submit" value="submit"  id="btn">
+            <input onclick="my()" type="submit" value="submit"  id="btn">
             <input type="reset" value="reset" id="">
 
 
@@ -78,6 +78,10 @@
             //doc.document.write("hello");
 
             with(doc.document){
+                write("<html>");
+                write("<head><title>ho</title></head>");
+            
+                    write("<div style='background-color:red'>");
                 write("Name:- "+name);
                 write("<br>");
                 write("Address:- "+address);
@@ -93,25 +97,9 @@
 
                 write(" <input type='button' value='close me' onclick='self.close();' >" );
                 write(" <input type='button' value='print' onclick='self.print();' >" );
-
-            }
-
-
-
-
-
-
-
-
-
+               
             
-           doc.document.getElementById('btn').addEventListener("click",function (){
-            var p=document.getElementById('p');
-            p.style.display='block'
-
-                
-            })
-           
+            }
 
         }
 
