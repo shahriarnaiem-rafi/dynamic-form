@@ -41,7 +41,7 @@
                     Urdu<input type="checkbox" name="ck" value="urdu" id="">
                     Rasian<input type="checkbox" name="ck" value="Rasian" id="">
                 </div>
-            
+            <br>
 
             <input onclick="my()" type="submit" value="submit"  id="btn">
             <input type="reset" value="reset" id="">
@@ -80,8 +80,8 @@
             with(doc.document){
                 write("<html>");
                 write("<head><title>ho</title></head>");
-            
-                    write("<div style='background-color:red'>");
+                write("<body style='background-color:lightblue; color:black; text-shadow:2px 3px 5px white; font-weight:bold;'>");
+                    
                 write("Name:- "+name);
                 write("<br>");
                 write("Address:- "+address);
@@ -93,10 +93,10 @@
                 write("Gender:- "+gender);
                 write("<br>");
                 write("Course:- "+course);
-                write("<br>");
+                write("<br>");write("<br>");
 
-                write(" <input type='button' value='close me' onclick='self.close();' >" );
-                write(" <input type='button' value='print' onclick='self.print();' >" );
+                write(" <input type='button' value='close me' onclick='self.close();' style='background-color:lightgray; color:white; padding:5px; border:none; box-shadow:2px 3px 5px blue; cursor:pointer; color:black;' >" );
+                write(" <input type='button' value='print' onclick='self.print();' style='background-color:lightgray; color:white; padding:5px 10px; border:none; box-shadow:2px 3px 5px blue;  cursor:pointer; margin-left:10px; color:black;' >" );
                
             
             }
